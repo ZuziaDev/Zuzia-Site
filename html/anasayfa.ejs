@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
+    <meta name="title" content="Zuzia">
+    <meta content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!" name="description">
+<meta name="author" content="Zuzia RodzeN">
+<meta name="theme-color" content="#303136">
+<meta name="discord:card" content="https://cdn.discordapp.com/attachments/890633245597786133/935898034259247144/unknown.png">
+<link rel="icon" href="https://cdn.discordapp.com/attachments/899685954984505354/937354925481009182/unknown.png" type="image/x-icon">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/924363100608675892/ab374ee94aa399554b7b42c50bbf79fa.webp?size=2048" />
+<meta property="og:keywords" content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+<meta property="og:image:margin-top" content="50%">
+<meta content="" name="keywords">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/924363100608675892/ab374ee94aa399554b7b42c50bbf79fa.webp?size=2048" sizes="25x25">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Zuzia - Anasayfa</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<style>
+
+  body{
+  background: #111;
+  min-height: 100vh;
+  font-family: monospace;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* ---------- BOTLA ALAKALI KODLAR --------- */
+@media only screen and (min-width: 750px){
+  .nav{
+  position: fixed;
+  height: 8vh;
+  width: 100%;
+  background-color: #33333365;/*knk dcden bişi yazdım gödünmü*/
+ 
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  
+  .nav h2{
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .nav h2:hover{
+  color: #fff;
+  letter-spacing: 2px;
+  animation: h2 4s 1;
+  }
+  @keyframes h2 {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+  .nav a{
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.8s;
+  }
+
+  .nav a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    animation: a 4s 1;
+    }
+    @keyframes a {
+      0%{
+        color: #fff;
+      }
+      25%{
+        color: #ffdbfe;
+      }
+      50%{
+        color: #d2bcff;
+      }
+      75%{
+        color: #b3cbff;
+      }
+    }
+.bot img{
+width: 400px;
+margin-bottom: 50%;
+max-width: 100%;
+height: 350px;
+}
+.bot{
+  border-radius: 15px;
+  float:left;
+  width: 450px;
+  padding: 75px;
+  text-align: center;
+  margin: 35px;
+  margin-top: 5%;
+  color: #fff;
+  font-family: monospace;
+  position: unset;
+  top: -15px;
+}
+#ne{
+  position: relative;
+  top: -150px;
+}
+
+.bot h1{
+  width: 300px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-family: monospace;
+  margin-bottom: 5%;
+  transition: 0.8s;
+  color: #fff;
+}
+.bot h1:hover{
+  color: #fff;
+  letter-spacing: 7px;
+  animation: zuzia 4s 1;
+}
+@keyframes zuzia {
+  0%{
+    color: #fff;
+  }
+  25%{
+    color: #ffdbfe;
+  }
+  50%{
+    color: #d2bcff;
+  }
+  75%{
+    color: #b3cbff;
+  }
+  }
+
+.bot p{
+  font-size: 22.5px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: monospace;
+}
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #fff, #fff);
+  border-radius: 20px;
+  transition: 0.8s;
+}
+body::-webkit-scrollbar-thumb:hover {
+   animation: scroll 4s 1;
+}
+@keyframes scroll {
+  0%{
+    color: #fff;
+  }
+  25%{
+    color: #949494;
+  }
+  50%{
+    color: #949494;
+  }
+  75%{
+    color: #949494;
+  }
+  }
+.buton{
+  margin-left: 7px;
+  margin-top: 6px;
+  border-radius: 6px;
+  width: 180px;
+  height: 60px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: monospace;
+  font-size: 30px;
+  padding:6px;
+  background-color: #22222222;
+  text-decoration: none;
+  transition: 0.8s;
+}
+.buton:hover {
+  background: #ffffff11;
+  text-decoration: none;
+  color: #b678ff;
+}
+.bilgi{
+  border-radius: 15px;
+  float: left;
+  width: 100px;
+  padding-left: 165px;
+  text-align: center;
+  margin: 40px;
+  margin-top: 5%;
+  color: #fff;
+  font-family: monospace;
+}
+.bilgi h1{
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-family: monospace;
+  margin-bottom: 5%;
+}
+.bilgi p{
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-family: monospace;
+  margin-bottom: 5%;
+}
+
+#ne{
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+#ne p{
+font-size: 25px;
+}
+/* ---------- FOOTER ------------*/ 
+#wrapper{
+  min-height: calc(1300px - 200px);
+}
+
+#alt-menu{
+position: relative;
+bottom: 0px;
+text-align: center;
+height: 220px;
+width: 100%;
+background: #22222255;
+color: #fff;
+}
+#alt-menu .a{
+  color: #fff;
+  text-decoration: none;
+  font-family: monospace;
+}
+#alt-menu p{
+font-size: 15px;
+margin-top: 20px;
+font-weight: 300;
+font-family: monospace;
+} 
+
+.zuzi{
+color: #b5b5b5;
+font-family: monospace;
+}
+.rodzi{
+  color: #ffdbfe
+}
+
+
+#wrapper{
+    min-height: calc(1300px - 200px);
+  }
+/* --- MOBİL UYUM ---- */
+
+@media only screen and (max-width: 750px){
+    .nav{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background: #33333365;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  .bot{
+    text-align:center;
+    top: 50px; 
+  }
+
+  .nav h2{
+    bottom: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .nav h2:hover{
+  color: #fff;
+  letter-spacing: 2px;
+  animation: h2 4s 1;
+  }
+  @keyframes h2 {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+  .nav a{
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.8s;
+  }
+
+  .nav a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    animation: a 4s 1;
+  }
+  @keyframes a {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+
+  #alt-menu{
+    position: absolute;
+    bottom: -1100px;
+    text-align: center;
+    height: 220px;
+    width: 100%;
+    background: #22222255;
+    color: #fff;
+  }
+  #alt-menu .a{
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+  }
+  #alt-menu p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-family: monospace;
+  }
+  #ne{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 160px;
+    top: 20px;
+  }
+
+  .bot img{
+    width: 350px;
+    margin-bottom: 50%;
+    max-width: 100%;
+    height: 350px;
+  }
+  .bot{
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: monospace;
+   -
+  }
+  .bot h1{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-family: monospace;
+    margin-bottom: 5%;
+    transition: 0.8s;
+    color: #fff;
+  }
+  .bot h1:hover{
+    color: #fff;
+    letter-spacing: 7px;
+    animation: zuzia 4s 1;
+  }
+  @keyframes zuzia {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+    }
+
+  .bot p{
+    font-size: 22.5px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: monospace;
+  }
+}
+
+
+</style>
+</head>
+  <body>
+    
+      <div id="wrapper">
+        <nav class="nav">
+          <a id="zuzi" href="/"> <h2> Zuzia </h2></a>
+          <a href="/hakkinda">Hakkında</a>
+          <a href="/komutlar">Komutlar</a>
+          <a href="/davet">Davet</a>
+          <a href="/destek">Destek</a>
+        </nav>
+      <div id="sayfa" class="container">
+      <div class="row">
+        <br>
+        <center>
+      
+        <div class="bot">
+          <h1>Zuzia</h1>
+          <p>Zuzia'nın gelişmiş moderasyon sistemleri ve invite, ticket, kayıt gibi bir çok sistemle sunucunuzu yönetin.</p><br><br>
+          <a href="/davet" class="buton">Hemen Dene</a>
+        </div><br><br>
+        <div class="bot">
+          <img src="https://cdn.discordapp.com/attachments/890633245597786133/935853886579826688/zuzia.png">
+        </div>
+        </center>
+    
+         <div id="ne" class="col-sm-4" class="bilgi">
+        <h1>Sunucu</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= db.get('sunucu'); %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div><br>
+        <div id="ne" class="col-sm-4" class="bilgi">
+        <h1>Kullanıcı</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= sdb.get('uye') %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div><br>        
+        <div id="ne" class="col-sm-4" class="bilgi">
+       
+        <h1>Kanal</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= adb.get('kanal') %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div>
+
+      </div>
+    </div>
+  <footer id="alt-menu">
+
+      <div id="alt-kutu">
+        <br>
+          <p><a href="/#" class="a">Anasayfa</a> | <a href="/hakkında" class="a">Hakkında</a></b></p><br>
+
+          <p>© Telif Hakkı Zuzia. Tüm Haklar Saklıdır <span class="zuzi"><b>2021-</b><b id="yil"></span></p><br>
+          <p>Site Yapımcısı : <span class="rodzi">Zuzia RodzeN</span></p>
+
+      </div>
+  </footer>
+  </div>
+</div>
+
+
+<script>!function(e){var t={};function n(r){if(t[r])return t[r].exports;var a=t[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)n.d(r,a,function(t){return e[t]}.bind(null,a));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=2)}([,,function(e,t,n){e.exports=n(3)},function(e,t,n){"use strict";function r(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}n.r(t);new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.registerEventListeners()}var t,n,a;return t=e,(n=[{key:"registerEventListeners",value:function(){var e=this,t=document.querySelectorAll(".purecounter");if(this.intersectionListenerSupported())for(var n=new IntersectionObserver(this.animateElements.bind(this),{root:null,rootMargin:"20px",threshold:.5}),r=0;r<t.length;r++)n.observe(t[r]);else window.addEventListener&&(this.animateLegacy(t),window.addEventListener("scroll",function(n){e.animateLegacy(t)},{passive:!0}))}},{key:"animateLegacy",value:function(e){for(var t=0;t<e.length;t++){!0===this.parseConfig(e[t]).legacy&&this.elementIsInView(e[t])&&this.animateElements([e[t]])}}},{key:"animateElements",value:function(e,t){var n=this;e.forEach(function(e){var r=void 0!==e.target?n.parseConfig(e.target):n.parseConfig(e);return r.duration<=0?e.innerHTML=r.end.toFixed(r.decimals):!t&&!n.elementIsInView(e)||t&&e.intersectionRatio<.5?e.target.innerHTML=r.start>r.end?r.end:r.start:void setTimeout(function(){return void 0!==e.target?n.startCounter(e.target,r):n.startCounter(e,r)},r.delay)})}},{key:"startCounter",value:function(e,t){var n=this,r=(t.end-t.start)/(t.duration/t.delay),a="inc";t.start>t.end&&(a="dec",r*=-1),r<1&&t.decimals<=0&&(r=1);var i=t.decimals<=0?parseInt(t.start):parseFloat(t.start).toFixed(t.decimals);e.innerHTML=i,!0===t.once&&e.setAttribute("data-purecounter-duration",0);var o=setInterval(function(){var s=n.nextNumber(i,r,t,a);e.innerHTML=n.formatNumber(s,t),((i=s)>=t.end&&"inc"==a||i<=t.end&&"dec"==a)&&(clearInterval(o),i!=t.end&&(e.innerHTML=t.decimals<=0?parseInt(t.end):parseFloat(t.end).toFixed(t.decimals)))},t.delay)}},{key:"parseConfig",value:function(e){for(var t=[].filter.call(e.attributes,function(e){return/^data-purecounter-/.test(e.name)}),n={start:0,end:9001,duration:2e3,delay:10,once:!0,decimals:0,legacy:!0},r=0;r<t.length;r++){var a=t[r].name.replace("data-purecounter-","");n[a.toLowerCase()]="duration"==a.toLowerCase()?parseInt(1e3*this.castDataType(t[r].value)):this.castDataType(t[r].value)}return n}},{key:"nextNumber",value:function(e,t,n,r){return r||(r="inc"),"inc"===r?n.decimals<=0?parseInt(e)+parseInt(t):parseFloat(e)+parseFloat(t):n.decimals<=0?parseInt(e)-parseInt(t):parseFloat(e)-parseFloat(t)}},{key:"formatNumber",value:function(e,t){return t.decimals<=0?parseInt(e):e.toLocaleString(void 0,{minimumFractionDigits:t.decimals,maximumFractionDigits:t.decimals})}},{key:"castDataType",value:function(e){return/^[0-9]+\.[0-9]+$/.test(e)?parseFloat(e):/^[0-9]+$/.test(e)?parseInt(e):e}},{key:"elementIsInView",value:function(e){for(var t=e.offsetTop,n=e.offsetLeft,r=e.offsetWidth,a=e.offsetHeight;e.offsetParent;)t+=(e=e.offsetParent).offsetTop,n+=e.offsetLeft;return t>=window.pageYOffset&&n>=window.pageXOffset&&t+a<=window.pageYOffset+window.innerHeight&&n+r<=window.pageXOffset+window.innerWidth}},{key:"intersectionListenerSupported",value:function(){return"IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype}}])&&r(t.prototype,n),a&&r(t,a),e}())}]);</script>
+    <script type="text/javascript">
+var title = document.title;
+var alttitle = "Zuzia Seni Bekliyor ^^";
+window.onblur = function () { document.title = alttitle; };
+window.onfocus = function () { document.title = title; };
+</script>
+<script>
+function IE(e) {
+     if (navigator.appName == "Microsoft Internet Explorer" && (event.button == "2" || event.button == "3")) {
+          alert('SAĞ TIKLAMA ENGELİ');
+          return false;
+     }
+}
+function NS(e) {
+     if (document.layers || (document.getElementById && !document.all)) {
+          if (e.which == "2" || e.which == "3") {
+               alert('Sitemizin kod ve resimlerinin korunması amacıyla sağ tıklama engellenmiştir. Anlayışınız için teşekkür ederiz.');
+               return false;
+          }
+     }
+}
+document.onmousedown=IE;document.onmouseup=NS;document.oncontextmenu=new Function("return false");
+</script>
+  <script type="text/javascript">
+    document.getElementById("yil").innerHTML = new Date().getFullYear();
+  </script>
+<script>
+$(function(){
+   var nav = $('.nav').offset().top;
+   $(window).scroll(function(){
+     if $(window).scrollTop() > nav) {
+        $('.nav').css({transition: "1.0"});
+      }
+   });
+});
+</script>
+<script>
+jQuery(document).ready( function() {        
+    var navOffset = jQuery("nav").offset().top;
+
+    jQuery(window).scroll(function() {
+        var scrollPos = jQuery(window).scrollTop();
+        var navOpacity = scrollPos /800;
+        $('.navbar').css("opacity", navOpacity);
+
+        if (jQuery('nav').css('opacity') < 1) {
+            jQuery('.navigation').css('opacity', '1')  
+        };
+
+</script>
+<script src="ejs.min.js"></script>
+</body>
+</html>
