@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
+    <meta name="title" content="Zuzia - Komutlar">
+    <meta content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!" name="description">
+
+<meta name="author" content="Zuzia RodzeN">
+<meta name="theme-color" content="#303136">
+<meta name="discord:card" content="https://cdn.discordapp.com/attachments/890633245597786133/935898034259247144/unknown.png">
+<link rel="icon" href="https://cdn.discordapp.com/attachments/899685954984505354/937354925481009182/unknown.png" type="image/x-icon">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/924363100608675892/ab374ee94aa399554b7b42c50bbf79fa.webp?size=2048" />
+<meta property="og:keywords" content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+<meta property="og:image:border-radius" content="50%">
+<meta content="" name="keywords">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/924363100608675892/ab374ee94aa399554b7b42c50bbf79fa.webp?size=2048" sizes="25x25">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Zuzia - Komutlar</title>
+
+<style>
+
+  body{
+  background: #111;
+  min-height: 100vh;
+  font-family: monospace;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* -------------- NAVBAR ------------*/
+ @media only screen and (min-width: 750px){
+ #sayfa{ /* ayarlama için denek amaçlı oluşturdum, işim bitince sileceğim. */ 
+  border-width: 1px;
+  border-style: solid;
+  border-color: #111111;
+  width: 100%;
+  height: 2350px;
+}
+  .nav{
+  position: fixed;
+  height: 8vh;
+  width: 100%;
+  background-color: #33333365;/*knk dcden bişi yazdım gödünmü*/
+ 
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  
+  .nav h2{
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .nav h2:hover{
+  color: #fff;
+  letter-spacing: 2px;
+  animation: h2 4s 1;
+  }
+  @keyframes h2 {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+  .nav a{
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.8s;
+  }
+
+  .nav a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    animation: a 4s 1;
+    }
+    @keyframes a {
+      0%{
+        color: #fff;
+      }
+      25%{
+        color: #ffdbfe;
+      }
+      50%{
+        color: #d2bcff;
+      }
+      75%{
+        color: #b3cbff;
+      }
+    }
+  }
+.komutlar{
+  width: 950px;
+  padding-left: 50px;
+  margin-top: 70px;
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+  margin: auto;
+  border-radius: 5%;
+  height: 1300px;
+}
+
+.title h1{
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-family: monospace;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.title h3{
+  font-size: 25.5px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: monospace;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.title p{
+  font-size: 12.5px;
+  font-family: monospace;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.title p a{
+color: #fff;
+text-decoration: none;
+transition: 0.8s;
+}
+.title p a:hover{
+color:#b678ff;
+}
+.kategori h4{
+font-size: 27px;
+letter-spacing: 1px;
+}
+.kategori p{
+font-size: 17px;
+margin-top: 10px;
+margin-bottom: 30px;
+letter-spacing: 0.8px
+}
+.discord{
+    background-color: #22222288;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+  line-height: 23px;
+  }
+  .bilgi{
+  position: relative;
+  float: left;
+  width: 100px;
+  padding-left: 165px;
+  text-align: center;
+  margin: 40px;
+  margin-top: 5%;
+  color: #fff;
+  font-family: monospace;
+}
+.bilgi h1{
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-family: monospace;
+  margin-bottom: 5%;
+}
+.bilgi p{
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-family: monospace;
+  margin-bottom: 5%;
+}
+
+/*#ne{
+border
+  color: white;
+  text-align: center;
+  position: relative;
+  
+  left: 33%;
+  width: 130px;
+  height: 60px;
+  float: left;
+  margin: 30px;
+}*/
+
+/*knk ben yatıyom iyi geceler iyi geceler knkm*/
+#ne p{
+font-size: 25px;
+}
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #fff, #fff);
+  border-radius: 20px;
+  
+}
+
+
+
+
+
+  body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #fff, #fff);
+  border-radius: 20px;
+}
+
+/* ---------- FOOTER ------------*/ 
+#wrapper{
+  min-height: calc(1300px - 200px);
+}
+
+#alt-menu{
+position: relative;
+bottom: 0px;
+text-align: center;
+height: 220px;
+width: 100%;
+background: #22222255;
+color: #fff;
+}
+#alt-menu .a{
+  color: #fff;
+  text-decoration: none;
+  font-family: monospace;
+}
+#alt-menu p{
+font-size: 15px;
+margin-top: 20px;
+font-weight: 300;
+font-family: monospace;
+} 
+
+.zuzi{
+color: #b5b5b5;
+font-family: monospace;
+}
+.rodzi{
+  color: #ffdbfe
+}
+
+
+/* --- MOBİL UYUM ---- */
+@media only screen and (max-width: 750px){
+    .nav{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background: #33333365;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  .nav h2{
+    bottom: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .nav h2:hover{
+  color: #fff;
+  letter-spacing: 2px;
+  animation: h2 4s 1;
+  }
+  @keyframes h2 {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+  .nav a{
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.8s;
+  }
+
+  .nav a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    animation: a 4s 1;
+  }
+  @keyframes a {
+    0%{
+      color: #fff;
+    }
+    25%{
+      color: #ffdbfe;
+    }
+    50%{
+      color: #d2bcff;
+    }
+    75%{
+      color: #b3cbff;
+    }
+  }
+
+  #alt-menu{
+    position: relative;
+    bottom: -1600px;
+    text-align: center;
+    height: 220px;
+    width: 100%;
+    background: #22222255;
+    color: #fff;
+  }
+  #alt-menu .a{
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+  }
+  #alt-menu p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-family: monospace;
+  }
+  #ne{
+    color: white;
+    text-align: center;
+    
+  }
+  #sayfa{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #111111;
+    width: 100%;
+    height: 2350px;
+  }
+  .komutlar{
+    position: unset;
+    width: 333px;
+    padding-left: 40px;
+    margin-top: 70px;
+    color: #fff;
+    font-family: monospace;
+    text-align: left;
+    margin: auto;
+    border-radius: 5%;
+    height: 1000px;
+  }
+
+  .title h1{
+    font-size: 40px;
+    letter-spacing: 1.25px;
+    font-weight: 150;
+    font-family: monospace;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .title h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 50;
+    font-family: monospace;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .title p{
+    font-size: 15px;
+    font-family: monospace;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .title p a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.8s;
+  }
+  .title p a:hover{
+  color:#b678ff;
+  }
+  .kategori h4{
+  font-size: 27px;
+  letter-spacing: 1px;
+  }
+  .kategori p{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 0.8px;
+  line-height: 35px;
+  }
+  .kategori{
+    line-height: 35px;
+  }
+  .discord{
+      background-color: #22222288;
+      color: white;
+      font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 20px;
+    }
+
+}
+
+</style>
+</head>
+  <body>
+    <div id="sayfa">
+      <div id="wrapper">
+        <nav class="nav">
+          <a href="/#"> <h2> Zuzia </h2></a>
+          <a href="/hakkinda">Hakkında</a>
+          <a href="/komutlar">Komutlar</a>
+          <a href="/davet">Davet</a>
+          <a href="/destek">Destek</a>
+        </nav>
+        <br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<div class="komutlar">
+<div class="title">
+  <h1>Komutlar [<span data-purecounter-start="0" data-purecounter-end="146" data-purecounter-duration="1" class="purecounter"></span>]</h1>
+<br>
+  <h3>Prefix: * , @Zuzia#2255</h3>
+  <p> <a href="#moderasyon">moderasyon</a>, <a href="#guard">guard</a>, <a href="#ayarlamalı">ayarlamali</a>, <a href="#kayıt">kayit</a>, <a href="#ticket">ticket</a>, <a href="#kullanıcı">kullanici</a>, <a href="#sahip">sahip</a></p>
+</div>
+<br><br><br>
+<div class="kategori" id="moderasyon">
+  <h4>Moderasyon [<span data-purecounter-start="100" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+  <div class="discord">
+  <p id="bot-komutlari">ban, unban, kick, uyar, sicil, oto-cevap-listesi, yasak-kelime-listesi, mute, unmute, jail, unjail, sil, purge, banlist, bansebep, sesegir, sestençık, ticket kapat, ticket aç,uyetkili ayarla, uyetkili sıfırla, uyarı-log ayarla, uyarı-log sıfırla, jail-log sıfırla, jail-rol ayarla, jail-rol sıfırla, jail-yetlili ayarla, jail-yetlili sıfırla, mute-rol ayarla, mute-rol sıfırla, mute-yetkili ayarla, mute-yetkili sıfırla, ban-yetkili ayarla, ban-yetkili sıfırla, kick-yetkili ayarla, kick-log ayarla, kick-log sıfırla, kick-yetkili sıfırla, jail-log ayarla, bonus</p>
+  </div>
+</div>
+<br><br><br>
+<div class="kategori"id="guard">
+  <h4>Guard [<span data-purecounter-start="100" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>]</h4><!--bekle 5 dk ozaman önemli değidi abi hallediom 
+  word-spacing: 10px; kullanarak yapabiliriz
+  -->
+  <div class="discord"><!--bi dk -->
+  <p id="bot-komutlari">spam-engel aç, spam-engel kapat, spam-engel sayı, raid-engel aç, raid-engel kapat, raid-engel sayı, althesap-engel aç, althesap-engel kapat,  bot-engel aç, bot-engel kapat, bot-izin, çıkış-ban aç, çıkış-ban kapat</p>
+</div>
+</div>
+<br><br><br>
+<div class="kategori"id="#ayarlamali">
+  <h4>Ayarlamalı [<span data-purecounter-start="100" data-purecounter-end="29" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+  <div class="discord">
+  <p id="bot-komutlari">oto-cevap aç, oto-cevap sil, yasak-kelime aç, yasak-kelime sil, küfür-engel aç, küfür-engel kapat, küfür-engel muaf, link-engel aç, link-engel kapat, link-engel muaf, caps-engel aç, caps-engel kapat, caps-engel muaf, hgbb-kanal ayarla, hgbb-kanal sıfırla, hg-yazı ayarla, hg-yazı sıfırla, bb-yazı ayarla, bb-yazı sıfırla, sayaç ayarla, sayaç sıfırla, sayaç sayı, otorol ayarla, otorol sıfırla, mod-log aç, mod-log kapat, saas-aç, saas kapat, tavsiye-kanal ayarla, tavsiye-kanal sıfırla</p>
+</div>
+</div>
+<br><br><br>
+<div class="kategori"id="kayit">
+  <h4>Kayıt [<span data-purecounter-start="100" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+  <div class="discord">
+  <p id="bot-komutlari">kayıt-sistemi aç, kayıt-sistemi kapat, kayıt-kanal, kayıt-türü, kayıt-yetkili, kayıt-hgkanal, kayıt-kayıtsız, kayıt-erol, kayıt-krol, kayıt-ürol, kayıt-tag, kayıt-sembol, kayıt-otorol, ayarlar, kayıt, erkek, kız, kayıt-liste</p>
+</div>
+</div>
+<br><br><br>
+<div class="kategori"id="ticket" >
+<h4>Ticket [<span data-purecounter-start="100" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+<div class="discord">
+<p id="bot-komutlari">ticket-kanal ayarla, ticket-kanal sıfırla, ticket-kategori ayarla, ticket-kategori sıfırla, ticket-mesaj ayarla, ticket-mesaj sıfırla, ticket-embed-mesaj ayarla, ticket-embed-mesaj sıfırla, ticket-kapat</p>
+</div>
+</div>
+<div class="kategori"id="invite" >
+<h4>İnvite [<span data-purecounter-start="100" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+<div class="discord">
+<p id="bot-komutlari">invite-sistem aç, invite-sistem kapat, invhg-mesaj ayarla, invhg-mesaj sıfırla, invbb-mesaj ayarla, invbb-mesaj sıfırla, davet-rol ayarla, davet-rol sil, davetlerim</p>
+</div>
+</div>
+  
+<br><br><br>
+<div class="kategori"id="kullanici">
+<h4>Kullanıcı [<span data-purecounter-start="100" data-purecounter-end="23" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+<div class="discord">
+<p id="bot-komutlari">renk, say, emoji, kanal-ara, afk, tavsiye, ara, profil, sunucu, sunucu logo, güventest, avatar, korona, ping, yetkilerim rozetlerim, function, dolar, lyrics, atatürk, dosya-oluştur, davet, site, i</p>
+</div>
+</div>
+<div class="kategori"id="eglence">
+<h4>Eğlence [<span data-purecounter-start="100" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+<div class="discord">
+<p id="bot-komutlari">meme, aşk, sor, yazdır</p>
+</div>
+</div>
+<br><br><br>
+<div class="kategori"id="sahip">
+<h4>Sahip [<span data-purecounter-start="100" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>]</h4>
+<div class="discord">
+<p>eval, eval2, reboot, rozet-ver, rozet-al</p>
+</div>
+</div>
+</div>  
+       
+       
+        <!--         <div id="ne" class="col-sm-4" class="bilgi">
+        <h1>Sunucu</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= db.get('sunucu'); %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div>
+        <div id="ne" class="col-sm-4" class="bilgi">
+        <h1>Kullanıcı</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= sdb.get('uye') %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div>     
+        <div id="ne" class="col-sm-4" class="bilgi">
+       
+        <h1>Kanal</h1>
+        <p><span data-purecounter-start="0" data-purecounter-end="<%= adb.get('kanal') %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
+        </div>
+        </div>-->
+
+
+
+      </div>
+</div>
+
+  <footer id="alt-menu">
+
+      <div id="alt-kutu">
+        <br>
+          <p><a href="/" class="a">Anasayfa</a> | <a href="/hakkinda" class="a">Hakkında</a></b></p><br>
+
+          <p>© Telif Hakkı Zuzia. Tüm Haklar Saklıdır <span class="zuzi"><b>2021-</b><b id="yil"></span></p><br>
+      </div>
+  </footer>
+</div>
+<script>!function(e){var t={};function n(r){if(t[r])return t[r].exports;var a=t[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)n.d(r,a,function(t){return e[t]}.bind(null,a));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=2)}([,,function(e,t,n){e.exports=n(3)},function(e,t,n){"use strict";function r(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}n.r(t);new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.registerEventListeners()}var t,n,a;return t=e,(n=[{key:"registerEventListeners",value:function(){var e=this,t=document.querySelectorAll(".purecounter");if(this.intersectionListenerSupported())for(var n=new IntersectionObserver(this.animateElements.bind(this),{root:null,rootMargin:"20px",threshold:.5}),r=0;r<t.length;r++)n.observe(t[r]);else window.addEventListener&&(this.animateLegacy(t),window.addEventListener("scroll",function(n){e.animateLegacy(t)},{passive:!0}))}},{key:"animateLegacy",value:function(e){for(var t=0;t<e.length;t++){!0===this.parseConfig(e[t]).legacy&&this.elementIsInView(e[t])&&this.animateElements([e[t]])}}},{key:"animateElements",value:function(e,t){var n=this;e.forEach(function(e){var r=void 0!==e.target?n.parseConfig(e.target):n.parseConfig(e);return r.duration<=0?e.innerHTML=r.end.toFixed(r.decimals):!t&&!n.elementIsInView(e)||t&&e.intersectionRatio<.5?e.target.innerHTML=r.start>r.end?r.end:r.start:void setTimeout(function(){return void 0!==e.target?n.startCounter(e.target,r):n.startCounter(e,r)},r.delay)})}},{key:"startCounter",value:function(e,t){var n=this,r=(t.end-t.start)/(t.duration/t.delay),a="inc";t.start>t.end&&(a="dec",r*=-1),r<1&&t.decimals<=0&&(r=1);var i=t.decimals<=0?parseInt(t.start):parseFloat(t.start).toFixed(t.decimals);e.innerHTML=i,!0===t.once&&e.setAttribute("data-purecounter-duration",0);var o=setInterval(function(){var s=n.nextNumber(i,r,t,a);e.innerHTML=n.formatNumber(s,t),((i=s)>=t.end&&"inc"==a||i<=t.end&&"dec"==a)&&(clearInterval(o),i!=t.end&&(e.innerHTML=t.decimals<=0?parseInt(t.end):parseFloat(t.end).toFixed(t.decimals)))},t.delay)}},{key:"parseConfig",value:function(e){for(var t=[].filter.call(e.attributes,function(e){return/^data-purecounter-/.test(e.name)}),n={start:0,end:9001,duration:2e3,delay:10,once:!0,decimals:0,legacy:!0},r=0;r<t.length;r++){var a=t[r].name.replace("data-purecounter-","");n[a.toLowerCase()]="duration"==a.toLowerCase()?parseInt(1e3*this.castDataType(t[r].value)):this.castDataType(t[r].value)}return n}},{key:"nextNumber",value:function(e,t,n,r){return r||(r="inc"),"inc"===r?n.decimals<=0?parseInt(e)+parseInt(t):parseFloat(e)+parseFloat(t):n.decimals<=0?parseInt(e)-parseInt(t):parseFloat(e)-parseFloat(t)}},{key:"formatNumber",value:function(e,t){return t.decimals<=0?parseInt(e):e.toLocaleString(void 0,{minimumFractionDigits:t.decimals,maximumFractionDigits:t.decimals})}},{key:"castDataType",value:function(e){return/^[0-9]+\.[0-9]+$/.test(e)?parseFloat(e):/^[0-9]+$/.test(e)?parseInt(e):e}},{key:"elementIsInView",value:function(e){for(var t=e.offsetTop,n=e.offsetLeft,r=e.offsetWidth,a=e.offsetHeight;e.offsetParent;)t+=(e=e.offsetParent).offsetTop,n+=e.offsetLeft;return t>=window.pageYOffset&&n>=window.pageXOffset&&t+a<=window.pageYOffset+window.innerHeight&&n+r<=window.pageXOffset+window.innerWidth}},{key:"intersectionListenerSupported",value:function(){return"IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype}}])&&r(t.prototype,n),a&&r(t,a),e}())}]);</script>
+
+<script type="text/javascript">
+var title = document.title;
+var alttitle = "Zuzia Seni Bekliyor ^^";
+window.onblur = function () { document.title = alttitle; };
+window.onfocus = function () { document.title = title; };
+</script>
+<script>
+function IE(e) {
+     if (navigator.appName == "Microsoft Internet Explorer" && (event.button == "2" || event.button == "3")) {
+          alert('SAĞ TIKLAMA ENGELİ');
+          return false;
+     }
+}
+function NS(e) {
+     if (document.layers || (document.getElementById && !document.all)) {
+          if (e.which == "2" || e.which == "3") {
+               alert('Sitemizin kod ve resimlerinin korunması amacıyla sağ tıklama engellenmiştir. Anlayışınız için teşekkür ederiz.');
+               return false;
+          }
+     }
+}
+document.onmousedown=IE;document.onmouseup=NS;document.oncontextmenu=new Function("return false");
+</script>
+<script>
+$(function(){
+   var nav = $('.nav').offset().top;
+   $(window).scroll(function(){
+     if $(window).scrollTop() > nav) {
+        $('.nav').css({transition: "1.0"});
+      }
+   });
+});
+</script>
+  <script type="text/javascript">
+    document.getElementById("yil").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="ejs.min.js"></script>
+</body>
+</html>
